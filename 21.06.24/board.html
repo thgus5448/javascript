@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+    <meta charset="urf-8">
+
+    <head>
+        <title>게시판</title>
+
+        <style>
+            ul {
+                list-style-type: none;
+            }
+
+            ul li {
+                margin-bottom: 10px;
+            }
+
+            label.title {
+                font-weight: bold;  /* 굵은글자 */
+                width: 80px; /* 너비 */
+                float: left; /* 왼쪽부터 배치*/
+            }
+
+            fieldset {
+                margin: 15px 10px; /* 상하, 좌우 */
+            }
+
+            div.centered {
+                text-align: center; /* 가운데 정렬 */
+            }
+
+            textarea.ta1 {
+                text-align: left; /* 가운데 정렬 */
+            }
+        </style>
+    </head>
+
+    <body>
+            <form>
+                    <fieldset>
+                        <ul>
+                            <li>
+                                <label for="write-title" class=title>제목</label>
+                                <input type="text" id="title" size="50">
+                            </li>
+                            <li>
+                                <label for="write-text" class=title>내용</label>
+                                <textarea class=ta1 autofocus cols="80" rows="25"></textarea>
+                            </li>
+                        </ul>
+                    </fieldset>
+                    <div class="centered">
+                        <input type="submit" value="확인">
+                    </div>
+            </form>
+    </body>
+
+</html>
