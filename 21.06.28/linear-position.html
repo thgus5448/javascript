@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>선형 그러데이션</title>
+        <style>
+            div {
+                width:500px;
+			    height:300px;
+			    border-radius:10px;
+            }
+            .grad {
+                background: blue;   /* css3 미지원 브라우저 */
+                background: -webkit-linear-gradient(left top, blue, white);
+                background: -moz-linear-gradient(right bottom, blue, white);
+                background: -moz-linear-gradient(right bottom, blue, white);
+                background: linear-gradient(to right bottom, blue, white);
+            }
+        </style>
+    </head>
+        <h3>위치 키워드를 사용해 선형 그러데이션 만들기</h3>
+        <p>linear-gradient(위치, 색상, 끝위치)
+            <br><small>-webkit- : 시작위치</small>
+            <br><small>나머지는 끝위치</small>
+        </p>
+    <body>
+        <div class="grad"></div>
+    </body>
+</html>
