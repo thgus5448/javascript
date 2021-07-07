@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <title>가상 요소를 사용해 내용 표시</title>
+        <style>
+            .container {
+                width: 80px;
+                margin: 0 auto;
+            }
+            ul li {
+                margin: 15px;
+            }
+            li.hot::after {
+                content: "NEW !!";
+                font-size: x-small;
+                padding: 2px 4px;
+                margin: 0 10px;
+                border-radius: 2px;
+                background: #f00;
+                color: #fff;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>제품 목록</h1>
+        <ul>
+            <li class="hot">제품 A</li>
+            <li>제품 B</li>
+            <li>제품 C</li>
+            <li class="hot">제품 D</li>
+        </ul>
+    </body>
+</html>

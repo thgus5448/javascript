@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <title>표의 홀수 번째 열에만 배경 색 넣기</title>
+        <style>
+            
+            table {
+                border: 1px black solid;
+                font-size: 25px;
+            }
+            table tr:nth-child(2n+1) {
+                background: lightgray;
+                color: black;
+            }
+            td {
+                padding: 5px;
+                padding-right: 30px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>건강에 좋은 건강 식품</h1>
+        <table>
+            <tr><td>블루베리</td></tr>
+            <tr><td>귀리</td></tr>
+            <tr><td>토마토</td></tr>
+            <tr><td>시금치</td></tr>
+            <tr><td>적포도주</td></tr>
+            <tr><td>견과류</td></tr>
+            <tr><td>브로콜리</td></tr>
+            <tr><td>마늘</td></tr>
+            <tr><td>녹차</td></tr>
+        </table>
+    </body>
+</html>

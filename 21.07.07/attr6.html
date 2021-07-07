@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <title>링크한 파일의 확장자에 따라 아이콘 표시하기</title>
+        <style>
+            a[href $= "hwp"] {
+                background: url(images/hwp_icon.gif) no-repeat right center;
+                padding-right: 25px;
+            }
+            a[href $= "xls"] {
+                background: url(images/excel_icon.gif) no-repeat right center;
+                padding-right: 25px;
+            }
+        </style>
+    </head>
+    <body>
+        <h3>회사 소개 파일 다운 받기</h3>
+        <ul>
+            <li><a href="intro.hwp">hwp파일</a></li>
+            <li><a href="intro.xls">엑셀 파일</a></li>
+        </ul>
+    </body>
+</html>
