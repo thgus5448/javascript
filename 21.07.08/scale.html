@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <title>이미지 확대/축소하기</title>
+        <style>
+            .origin {
+                display: inline-block;
+            }
+            .scalex:hover {
+                transform: scaleX(1.2);
+            }
+            .scaley:hover {
+                transform: scaleY(1.5);
+            }
+            .scale:hover {
+                transform: scale(0.7);
+            }
+        </style>
+    </head>
+    <body>
+        <div class="origin">
+            <div class="scalex"><img src="images/fruit.jpg"></div>
+        </div>
+        <div class="origin">
+            <div class="scaley"><img src="images/fruit.jpg"></div>
+        </div>
+        <div class="origin">
+            <div class="scale"><img src="images/fruit.jpg"></div>
+        </div>
+    </body>
+</html>
