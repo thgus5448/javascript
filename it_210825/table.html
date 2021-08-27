@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>table.html</title>
+</head>
+<body>
+	<h1>TABLE</h1>
+	
+	
+	<h4>기본형</h4>
+	<table>
+		<tr><!-- 첫번째 줄 -->
+			<td>A</td>
+			<td>B</td>
+			<td>C</td>
+			<td>D</td>
+			<td>E</td>
+		</tr>
+		<tr><!-- 두번째 줄 -->
+			<tr>
+			<td>F</td>
+			<td>G</td>
+			<td>H</td>
+			<td>I</td>
+			<td>J</td>
+		</tr>
+	</table>
+		
+		
+	<h4>외각선</h4>
+	<table border='1'>
+		<colgroup>
+			<col style='background-color: #ccc'>
+			<col style='background-color: #00f'>
+			<col span='2' style='background-color: #ff0'>
+		</colgroup>
+		
+		<tr><!-- 첫번째 줄 -->
+			<td>1행</td>
+			<td>A</td>
+			<td>B</td>
+			<td>C</td>
+			<td>D</td>
+			<td>E</td>
+		</tr>
+		
+		<tr><!-- 두번째 줄 -->
+			<td>2행</td>
+			<td>F</td>
+			<td>G</td>
+			<td>H</td>
+			<td>I</td>
+			<td>J</td>
+		</tr>
+	</table>
+	
+	
+<figure>
+	<figcaption>
+		<font color='ff0000>'>열 병합(colspan)</font>
+	</figcaption>
+	<table border='1' width='300px'>
+	<tr><!-- 첫번째 줄 -->
+		<td>1</td>
+		<td colspan='2'>2</td>
+		<td>3</td>
+	</tr>
+	<tr><!-- 두번째 줄 -->
+		<td>4</td>
+		<td>5</td>
+		<td>6</td>
+		<td>7</td>
+	</tr>
+	<tr><!-- 세번째 줄 -->
+		<td>8</td>
+		<td colspan='3'>9</td>
+		<td>10</td>
+	</tr>
+	</table>
+</figure>
+	
+<figure>
+	<figcaption>
+		<font color=#0000ff>행병합(rowspan)</font>
+	</figcaption>
+	<table border='1'width='300px'>
+	<tr><!-- 메뉴 -->
+		<td>번호</td>
+		<td>성명</td>
+		<td>비고</td>
+	</tr>
+	<tr><!-- 첫번째 줄 -->
+		<td>1</td>
+		<td>Kim</td>
+		<td rowspan='3'>-주요명단</td>
+	</tr>
+	<tr><!-- 두번째 줄 -->
+		<td>2</td>
+		<td>Park</td>
+	</tr>
+	<tr><!-- 세번째 줄 -->
+		<td>3</td>
+		<td>Lee</td>
+	</tr>
+	</table>
+</figure>
+
+<p style='background-color:#0000ff; color:#ffff00'>
+	날이면 날마다 오는게 아녀~
+</p>
+
+</body>
+</html>
