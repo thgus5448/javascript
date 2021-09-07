@@ -1,0 +1,13 @@
+@charset "UTF-8";
+
+.wrapper>a {
+	background-color: #f00;
+	z-index: 2;
+}
+
+.wrapper>.b {
+	background-color: #0f0;
+	left: 50px;
+	top: 50px;
+	z-index: 99999;
+}

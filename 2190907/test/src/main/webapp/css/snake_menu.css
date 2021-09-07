@@ -1,0 +1,48 @@
+@charset "UTF-8";
+
+/* 매션
+1) 목록 태그에 불릿을 제거
+2) 목록의 배치 상태를 좌우
+3) 각 항목의 배치 상태를 좌우
+4) 바깥여백이나 안쪽 여백을 적당량 지정
+5) 각 항목의 배경색 지정
+*/
+h1 {
+	text-align: center;
+}
+ul>li {
+	list-style: none;
+	display: inline-block;
+	margin: 20px;
+	padding: 10px 20px;
+	border: 1px solid #000;
+	border-radius: 3px;
+	box-shadow: 3px 3px 0;
+}
+
+ul>li:nth-child(2n) {
+	background-color: #ddd
+}
+
+ul>li:nth-child(2n+1) {
+	background-color: #fff;
+}
+
+ul>li:hover {
+	cursor: pointer;
+	background-color: black;
+	color: white;
+	font-weight: bolder;
+}
+
+ol {
+	visibility: hidden;
+}
+
+ol>li {
+	text-align: center;
+}
+ul>li:hover>ol {
+	visibility: visible;
+	height: auto; /* 이거 안하면 밑에 잘려 */
+}

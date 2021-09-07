@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>selector.html</title>
+	
+	<style type="text/css">
+	* {
+		margin: 10px;
+		padding: 20px;
+		border: 1px solid #f00;
+	}
+	
+	div {
+		border: 1px solid #00f;
+	}
+	
+	div.a { /* div 태그중에서 class속성 값이 a인 태그 */
+		background-color: #f88;
+	}
+	
+	div#b {	/* div 태그 중에서 id 속성 값이 b인 태그 */
+		background-color: #88f; 
+	}
+	
+	.a, #b {	/* class="a" 이거나 id="b" */
+		font-size: 40px;
+		font-weight: bold;
+	}
+	
+	/* 
+		id 속성값이 here인 태그의 자손중에(1단계) class 속성값이 c이거나
+		id 속성값이 here인 태그의 자손중에 class 속성값이 d인 요소
+		----
+		id 속성값이 here인 태그의 자손중에(1단계) class 속성값이 c이거나 
+		d인 요소 */
+	#here>.c, #here>.d {
+		padding: 20px;
+	}
+	
+	
+	</style>
+	
+</head>
+	<body>
+	
+		<h1>selector</h1>
+			
+			<ul>
+				<li>모든 태그에 속성 지정</li>
+				<li>class에 속성 지정</li>
+				<li>id에 속성 지정</li>
+				<li>태그 + (class or id)</li>
+				<li>그룹(나열형) 속성 지정</li>
+			</ul>
+			
+		<div id="here">
+			<div class="a">A</div>
+			<div class="b">B</div>
+			
+			<div class="c">C</div>
+			<div class="d">D</div>
+			
+			<div>E</div>
+			<div>F</div>
+			<div>G</div>
+		</div> 
+</body>
+</html>

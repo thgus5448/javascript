@@ -1,0 +1,17 @@
+@charset "UTF-8";
+
+/* exam_media_query2_type1.css */
+
+@media screen and (max-width:700) {
+	.box1 {
+		width: 600px;
+	}
+	
+	.box2 {
+		width: 600px;
+	}
+	
+	.box3 {
+		width: 600px;
+	}
+}

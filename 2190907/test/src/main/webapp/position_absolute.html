@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>position_absolute</title>
+	
+	<style>
+	
+		.container {
+			position: relative; /* 이전 요소에 자연스럽게 연결해 배치하되 위치지정 가능 */
+			width: 200px;
+			height: 200px;
+			border: 1px solid black;
+		}
+		
+		.container>div {
+			width: 100px;
+			height: 100px;
+			position: relative;
+		}
+		
+		div.a { 
+			background-color: #f008;
+		}
+		
+		div.b { 
+			background-color: #00f8;
+			left: 100px;
+		}
+		
+		div.c { 
+			background-color: #ff08;
+			top: 100px;
+		}
+		
+		div.d { 
+			background-color: #0ff8;
+			left: 100px;
+			top: 100px;
+		}
+		
+	</style>
+</head>
+<body>
+	<h1>position(absolute)</h1>
+	
+	<div class="container1">
+		<div class="a"></div>
+		<div class="b"></div>
+		<div class="c"></div>
+		<div class="d"></div>
+	</div>
+	
+</body>
+</html>

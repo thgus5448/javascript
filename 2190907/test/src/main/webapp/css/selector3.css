@@ -1,0 +1,26 @@
+@charset "UTF-8";
+
+/* 하위 선택자 */
+ul ul {
+	background-color: #99f;
+}
+
+/* 내뒤 요소 선택자 */
+ul+ul {
+	border: 3px dotted #f00;
+}
+
+/* 형제 선택자 */
+ul~ul {
+	color: #f00;
+}
+
+/*속성 선택자 */
+ul[name=parl] {
+	font-weight: bold;
+}
+
+/* k가 abc 속성 값의 일부일 때 */
+ul[abc *= k]{
+	text-shadow: 2px 2px 2px #999;
+}	

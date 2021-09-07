@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>Insert title here</title>
+	
+	<style>
+		div {	/* 모든 div 태그 */
+			width : 500px;
+			margin: 0px auto;
+			float: left; 
+		}
+		
+		.a {	/* class="a" */
+			border: 2px solid #000;
+			padding: 30px
+		}
+	</style>
+	
+	<link rel="stylesheet" type="text/css" href="info.css">
+	
+</head>
+	
+<body>
+	<h1>CSS 작성 위치</h1>
+	
+	<fieldset>
+		<legend>방법3가지</legend>
+		<ol>
+			<li>태그에 style 속성을 사용하여 직접 작성하는 방법</li>
+			<li>style 태그를 사용하여 css를 작성하는 방법</li>
+			<li>외부에 css 형식의 파일을 만들고 link태그를 사용하여 css를 적용하는 방법</li>
+		</ol>
+	</fieldset>
+	
+	<h3>style 속성을 사용하여 CSS 적용하기</h3>
+	
+	<div	style="border: 20px solid #00f; 
+			padding: 30px; 
+			background-color: #aaf;
+			color: #ff0;
+			font-size: 30px;
+			font-family: 궁서체;">
+			유다현</div>
+	
+	<div	style="border: 20px solid #00f; 
+			padding: 30px; 
+			background-color: #aaf;
+			color: #ff0;
+			font-size: 30px;
+			font-family: 궁서체;">
+			홍길동</div>
+			
+	<div	style="border: 20px solid #00f; 
+			padding: 30px; 
+			background-color: #aaf;
+			color: #ff0;
+			font-size: 30px;
+			font-family: 궁서체;">
+			일지매</div>
+			
+	<div class="a">A</div>
+	<div class="a">B</div>
+	<div class="a">C</div>
+</body>
+</html>

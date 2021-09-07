@@ -1,0 +1,19 @@
+@charset "UTF-8";
+
+div.main {
+	width: 1000px;
+	border: 1px solid #f00;
+	margin: 20px auto;
+}
+
+div.main>div {
+	width: 200px;
+	height: 250px;
+	margin: 10px;
+	background-color: #ddd;
+	float: right;
+}
+
+div.sub {
+	clear: both;
+}

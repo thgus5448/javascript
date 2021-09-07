@@ -1,0 +1,80 @@
+@charset "UTF-8";
+
+/* 1)border 영역의 전체 넓이는 800px로 지정한 후 화면에 중앙 배치 */
+
+#border {
+	width: 800px;
+	margin: 30px auto;
+}
+
+/* 2)border안에 있는 h1태그의 바탕은 그라데이션처리하고 문자열에는 그림자 속성을 추가 */
+
+#border>h1 {
+	text-align: center;
+	height: 60px;
+	line-height: 60px;
+	color: black;
+	background: linear-gradient( #999, #fff);
+	text-shadow: 2px -2px 5px 0px gray; /* 텍스트 그림자 */
+}
+
+/* 3)border안에 있는 모든 div의 넓이와 높이 외각선을 지정 */
+#border>div {
+	width: 600px;
+	height: 300px;
+	border: 1px solid #777;
+	margin: 20px auto;
+}
+
+#border>.b {
+	border-width: 40px;
+	border-style: inset;
+}
+
+#border>.c {
+	border-width: 40px;
+	border-style: outset;
+}
+
+#border>.d {
+	border: none;
+	border-left-width: 40px;
+	border-left-style: solid;
+	border-left-color: #f00;
+	background: linear-gradient(90deg, #f88, #fff)
+}
+
+#border>.e {
+	border-radius: 40px;
+	box-shadow: 3px 3px 6px #aaa;
+}
+
+#border>.f {
+	border-radius: 40px 0 40px 0;
+	box-shadow: 3px 3px 6px #aaa;
+}
+
+#border>.g {
+	border-radius: 0 150px 150px 0;
+	box-shadow: 3px 3px 6px #aaa;
+}
+
+#border>.h {
+	border-radius: 0 150px 0 150px;
+	box-shadow: 3px 3px 6px #aaa;
+}
+
+#border>.i {
+	width: 500px;
+	height: 500px;
+	border-radius: 250px 250px 250px 250px;
+	box-shadow: 3px 3px 6px #aaa;
+}
+
+#border>.j {
+	border: 0px;
+	border-radius: 400px;
+	box-shadow: 3px 3px 6px #aaa;
+	background: radial-gradient(#fff, #ff0, #f00);
+}
+

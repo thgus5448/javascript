@@ -1,0 +1,51 @@
+@charset "UTF-8";
+
+#main {
+	width: 500px;
+	margin: 50px auto;
+	background-color: #eee;
+	padding: 30px;
+	box-sizing: border-box;
+}
+
+#main>h1 {
+	text-align: center;
+}
+
+#main>div {
+	margin: 20px;
+}
+
+#main>div.b {
+	white-space: nowrap; /* 공백x */
+}
+
+#main>div.c {
+	white-space: pre; /* 줄바꿈이 되진 않지만 프리폼의 속성을 그대로 따라한다 */
+}
+
+#main>div.d {
+	white-space: pre-line;
+}
+
+#main>div.e {
+	white-space: pre-wrap;
+}
+
+#main>div.f {
+	word-space: 105%; /* 자간 */
+	letter-spacing: 3px; /* 줄간 */
+	line-height: 140%; /* 행간 */
+	text-align: left;
+}
+
+#main>div.g {
+	border: 1px solid #44f;
+	padding: 20px 0;
+}
+
+#main>div.h {
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}

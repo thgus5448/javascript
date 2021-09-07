@@ -1,0 +1,51 @@
+@charset "UTF-8";
+
+body {
+	/*
+	background-image: url("../imgs/gong.png");
+	background-repeat: no-repeat;
+	*/
+}
+
+/*	
+	1)모든 div의 넓이와 높이를 600px * 400px로 설정
+	2)div의 외각선을 적당히 지정
+	3)div 사이의 간격을 20px로 지정
+*/
+
+div {
+	width: 600px;
+	height: 400px;
+	border: 2px solid #aaa;
+	margin: 20px;
+}
+
+div.a {
+	background-image: url("../imags/gong.png");
+}
+
+/* class="b" 바탕이미지를 y축으로면 반복 */
+div.b {
+	background-repeat: repeat-y;
+}
+
+/* class="c" 바탕이미지 크기를 800x600으로 지정 */
+div.c {
+	background-image: url("../imags/gong.png");
+	background-size: 100% 100%;
+}
+
+/* class="d" 바탕이미지의 위치를 50x40으로 이동 */
+div.d {
+	background-image: url("../imgs/gong.png");
+	background-repeat:no-repeat;
+	background-position: 50px 40px;
+}
+
+/* 바탕 이미지를 흐리하게 */
+div.e {
+	background-image: url("../imgs/gong.png");
+	overflow: scroll;
+	background-attachment: local; 
+}
+

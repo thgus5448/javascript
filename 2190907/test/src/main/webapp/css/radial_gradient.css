@@ -1,0 +1,41 @@
+@charset "UTF-8";
+
+div {
+	width: 300px;
+	height: 180px;
+	border: 2px solid #555;
+	margin: 20px;
+}
+
+div.a {
+	background: 
+		/* 원형그라데이션 - 원중심부터 모서리로	*/
+		radial-radient(#fff, #ff0, #f00);
+}
+
+div.b {
+	background:
+		radial-gradient(circle, #fff, #ff0, #f00);
+}
+
+div.c {
+	background-gradient(10px 10px, #00f, #ff0) 
+} 
+
+div.d {
+	background: 
+		radial-gradient(circle, #44f  10px, #00f, #ff0)
+}
+
+div.e {
+	
+} 
+
+h1 {
+	background: 
+		linear-gradient(50deg #334257, #548CA8);
+		padding: 10px 30px;
+		color: #EEEEEE;
+		text-shadow: -3px -3px 10px #fff;
+		font-family: 'Cooper'
+}

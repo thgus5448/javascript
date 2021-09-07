@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>esam_media_query.html</title>
+	</head>
+	<style>
+		div {
+			display: inline-block;
+			border: 1px solid black;
+			text-align: center;
+		}
+		.a {
+			width: 300px;
+			background-color: red;
+		}
+		.b {
+			width: 200px;
+			background-color: green;
+		}
+		.c {
+			width: 200px;
+			background-color: blue;
+		}
+		
+		@media screen and (max-width:900px) {
+			.a {
+				width: 350px;
+			}
+			.b {
+				width: 350px;
+			}
+			.c {
+				width: 700px;
+			}
+		}
+		
+		@media screen and (max-width:700px) {
+			.a {
+				width: 600px;
+			}
+			.b {
+				width: 600px;
+			}
+			.c {
+				width: 600px;
+			}
+		}
+		
+		
+		
+	</style>
+<body>
+	<div class=a>A</div>
+	<div class=b>B</div>
+	<div class=c>C</div>
+</body>
+</html>

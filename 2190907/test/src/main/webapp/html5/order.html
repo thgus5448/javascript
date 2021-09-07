@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>order.html</title>
+	
+	<style type="text/css">
+		ul {
+			list-style-type: none;
+			margin: 20px auto;
+		}
+		
+		ul li {
+			margin: 15px auto;
+		}
+		
+		fieldset {
+				margin: 20px auto;
+		}
+	</style>
+</head>
+<body>
+	<h1>상품주문서</h1>
+	
+	<fieldset>
+		<legend>개인 정보</legend>
+		<ul>
+			<li>
+				<label>이름</label>
+				<input type="text" name="name" placeholder="여백없이 입력">
+			</li>
+			
+			<li>
+				<label>연락처</label>
+				<input type="tel" name="tel1"placeholder="연락가능한 번호">
+			</li>
+		</ul>
+	</fieldset>
+	
+	<fieldset>
+		<legend>배송지 정보</legend>
+		<ul>
+			<li>
+				<label>주소</label>
+				<input type="text" name="address">
+			</li>
+			
+			<li>
+				<label>전화번호</label>
+				<input type="text" name="tel1">
+			</li>
+			
+			<li>
+				<label>메모</label>
+				<textarea cols="40" rows="2"></textarea>
+			</li>	
+		</ul>
+	</fieldset>
+	
+	<fieldset>
+		<legend>주문 정보</legend>
+		<ul>
+		
+			<li>
+			<label>
+				<input type="checkbox" name="dlink">과태말라 안티구아 (100g)
+			</label>
+				<input type="number" value="0">개 
+			</li>
+			
+			<li>
+			<label>
+				<input type="checkbox" name="dlink">인도네시아 만델링 (100g)
+			</label>
+				<input type="number" value="0">개 
+			</li>
+			
+			<li>
+				<label>
+					<input type="checkbox" name="dlink">과태말라 안티구아 (100gs)
+				</label>
+				<input type="number" value="0">개 
+			</li>
+			
+		</ul>
+	</fieldset>
+	
+	
+	
+</body>
+</html>

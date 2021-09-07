@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>box_model.html</title>
+	
+	<style>
+	
+		div.block {
+			width: 200px;
+			height: 30px;
+			border: 1px solid #999;
+		}
+		div.inline {
+			width: 200px;
+			height: 30px;
+			border: 1px solid #999;
+		}
+		div.target {
+			display: inline-block;
+			width:200px;
+			height:300px;
+			border: 1px solid #999;
+		}
+	</style>
+</head>
+
+<body>
+
+	<h3>block level</h3>
+	<div class="block">유다현</div>
+	<div>뒷 내용</div>
+	
+	<h3>inline level</h3>
+	<span class="inline">유다현</span>
+	<span>그 후 이야기</span>
+	
+	<h3>inline-block level</h3>
+	<div class="target">유다현</div>
+	<div class="target">유다현</div>
+	
+</body>
+</html>

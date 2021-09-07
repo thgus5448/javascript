@@ -1,0 +1,49 @@
+@charset "UTF-8";
+
+div#main {
+	width: 1000px;
+	margin: 30px auto;
+	background-color: #ddd;
+}
+
+div#main>h2 {
+	text-align: center;
+	margin-bottom: 50px;
+}
+
+div#main>h2 {
+	text-align: center;
+	margin-bottom: 50px;
+}
+
+div#main>.search>form {
+	float: right;	
+}
+
+div#main>.title {
+	height: 30px;
+	clear: both;
+	background-color: #777;
+	box-sizing: border-box;
+	padding: 5px 10px;
+	margin-top:5px;
+	color: #fff;
+}
+
+div#main>.title>span, .item>span {
+	/* display: inline-block; */
+	float: left;
+}
+
+div#main>.item {
+	line-height: 200%;
+	height: 30px;
+	clear: both;
+}
+
+.title>checkbox, .item>.checkbox {width: 80px;}
+.title>number, .item>.number {width: 120px;}
+.title>i_title, .item>.i_title {width: 400px;}
+.title>name, .item>.name {width: 140px;}
+.title>.look .item>.look {width: 90px;}
+.title>.like .item>.like {width: 90px;}

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>operator.html</title>
+</head>
+<body>
+	<h2>연산자의 종류</h2>
+	<script>
+		var a =10;
+		var b = 3;
+		var c = a/b;
+		var d = a%b;
+		
+		document.write(c);
+		document.write('<br>');
+		document.write(d);
+		
+		/* 논리 연산자 */
+		var p = 10;
+		var q = 10;
+		
+		/* &&(논리곱)은 모두 참이어야 참 */
+		document.write(p>1 && q>1); //참 && 참 = 참
+		document.write('<br>');
+		document.write(q>1 && q>100); //참 && 거짓 = 거짓
+		document.write('<br>');
+		document.write(p>100 && q>1); //거짓 && 참 = 거짓
+		document.write('<br>');
+		document.write(p>100 && q>100); // 거짓 && 거짓 =거짓
+		
+		/* ||(논리합)은 하나만 참이면 참 */
+		var r1 = q>1 || q>1; // 참 || 참 = 참
+		var r2 = q>1 || q>100; // 참 || 거짓 = 거짓
+		var r3 = p>100 || q>1; // 거짓 || 참 = 참
+		var r4 = p>100 || q>100; // 거짓 || 거짓 = 거짓
+		
+		document.write('<br>');
+		document.write(r1,' ',r2,' ',r3,' ',r4);
+		
+		/* 증감 연산자 */
+		
+			//선행연산자(연산기호를 변수 앞에 사용)
+			var a = 10;
+			var b = ++a;
+			document.write('<br>', a, ',', b); 
+			
+			//후행연산자(연산기호를 변수 뒤에 사용)
+			var a = 10;
+			var b = a++;
+			document.write('<br>', a, ',', b);
+		
+		//* && 와 & 비교
+		var a= 20;
+		var b = 20;
+		var r1 = a<10 && (b++)>10; //결과값이 거짓이면 b의 값이 증가하지 않는다.
+		document.write('<br>', r1, ' ', b);
+		
+		var r1 = a<10 & (b++)>10;
+		document.write('<br>', r1, ' ', b); //결과값이 거짓이어도 b의 값이 증가한다.
+		
+		
+		/* 3항 연산자 */
+		var a = 300;
+		var b = 200;
+		var r = (a>b) ? a : b;
+		document.write('<br>a, b중 큰값 : ', r);
+		
+		//문제) a, b 중 작은값을 출력하도록 3한 연산식 구현
+		var a = 200;
+		var b = 300;
+		var r = (a>b) ? a : b;
+		document.write('<br>a, b중 작은값 : ', r);
+		
+		/** 문제) 3항 연산자 미션
+		어떤 변수 a=324의 값이 3의 배수인가를 체크하여
+		3의 배수이면 '3의 배수임'
+		3의 배수가 아니면 '3의 배수가 아님'
+		**/
+		var a = 30;
+		var r = a%3==0 ? "3의 배수임" : "3의 배수가 아님" ;
+		document.write('<br>'+r);
+		
+	</script>
+</body>
+</html>

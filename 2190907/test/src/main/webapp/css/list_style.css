@@ -1,0 +1,14 @@
+@charset "UTF-8";
+
+div#list_style>h1 {
+	color: #ffdede;
+	text-shadow: 5px 5px 5px #fdf5ca;
+}
+
+div#list_style>ul.b {
+	list-style-image:url("../imgs/pumpkin.png") ;
+}
+
+div#list-style>ul.c {
+	list-style-position: outside;
+}

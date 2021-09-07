@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>link.html</title>
+	
+	<style>
+	
+		img {
+			width : 80px;
+			height: 100px;
+		}
+		
+		a {	/* 링크 */
+			text-decoration: none; /* 밑줄 없애기 */
+			color: #555;
+		}
+		
+	</style>
+	
+</head>
+<body>
+	<h1>link example</h1>
+	
+	<a href='/test/index.html'>HOME</a><br/>
+	<a href='/test/index.html' target='_black'>새창으로</a><br/>	<!-- 누른 만큼 사이트 열림 -->
+	<a href='/test/index.html' target='my_site'>My site</a><br/>	<!-- 지정한 주소의 사이트에서만 열림 -->
+	<a href='/test/index.html'>
+		<img src='../imgs/gong.png' alt='공유누르면 홈' width='276px' height='244px'/></a>
+	
+	<hr/>
+	
+	<h1>targe이 같기 때문에 다 같은 탭에서 열림</h1>
+	<a href='http://www.naver.com' target='my_site'>네이버</a>
+	<a href='http://www.daum.net' target='my_site'>다음</a>
+	<a href='http://www.nate.com' target='my_site'>네이트</a>
+	
+	<hr/>
+	
+	<h1>iframe 테스트(iframe을 허용하는 사이트만 연결가능)</h1>
+	<iframe width='800px' height='500px' name='test_frame'></iframe><br/>
+		<a href='http://www.naver.com' target='test_frame'>네이버</a>
+		<a href='httpc
+		://www.daum.net' target='test_frame'>다음</a>
+		<a href='http://www.nate.com' target='test_frame'>네이트</a>
+		<a href='sub_link.html' target='test_frame'>table exam</a>
+		<a href='./book_mark.html#chap4' target='test_frame'>북마크에 있는 4장</a>
+		
+	<hr/>
+	<h1>링크 연결x img</h1>
+	<img src='../imgs/gong.png' alt='공유사진 링크x' width='276px' height='244px'/>
+</body>
+</html>

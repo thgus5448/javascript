@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>form2.html</title>
+</head>
+<body>
+	<h1>여러 데이터 나열하기</h1>
+	
+	<form name="frm_multi_data" method="post" action="">
+		
+		<label>출장지</label>
+		<select name="city" size="10" multiple="multiple">
+		
+			<optgroup label="국내출장지"></optgroup>
+				<option value="L1" selected="selected">제주도</option>
+				<option value="L2">강원도</option>
+				<option value="L3">울릉도</option>
+				<option value="L4">인천</option>
+			<optgroup label="해외출장지"></optgroup>
+				<option value="L5">미국</option>
+				<option value="L6">일본</option>
+				<option value="L7">중국</option>
+				<option value="L8">북극</option>
+		</select>		
+		
+		<br>
+		
+		<label>과정 안내</label>
+		<input type="text" list="choices">
+		<datalist id="choices">
+			<option>HTML</option>
+			<option>CSS</option>
+			<option>JavaScript</option>
+			<option>Java</option>
+		</datalist>
+
+		<br>
+		
+		<textarea rows="doc" cols="70" rows="12"></textarea>
+		
+		<br>
+		
+		<progress max="100" value="80"></progress>
+	</form>
+		
+		
+</body>
+</html>

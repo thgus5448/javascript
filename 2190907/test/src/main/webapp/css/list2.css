@@ -1,0 +1,56 @@
+@charset "UTF-8";
+
+#main {
+	width: 1000px;
+	margin: 30px auto;
+	background-color: #ddd;
+}
+
+#main>h2 {
+	text-align: center;
+	margin-bottom: 50px;
+}
+
+#main>.search>form {
+	float: right;	
+}
+
+#main>.table {
+	display: table;
+	clear:both;
+}
+
+#main>.table>.title {
+	display:table-row;
+	height: 30px;
+	line-height: 30px;
+	clear: both;
+	background-color: #777;
+	box-sizing: border-box;
+	padding: 4px 10px;
+	margin-top:5px;
+	color: #fff;
+}
+
+.item:hover {	/* class="item" 영역에 마우스가 올라간 경우 */
+	background-color: #bbb;
+	cursor: pointer;	/* 마우스포인터 손가락으로 */
+}
+
+#main .title>span, .item>span {
+	border: 0px solid #f00;
+	display: tale-cell;
+}
+
+div#main .item {
+	line-height: 160%;
+	height: 30px;
+	display: table-row;
+}
+
+.title>checkbox, .item>.checkbox {width: 80px;}
+.title>number, .item>.number {width: 120px;}
+.title>i_title, .item>.i_title {width: 400px;}
+.title>name, .item>.name {width: 140px;}
+.title>.look .item>.look {width: 90px;}
+.title>.like .item>.like {width: 90px;}
