@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+		<meta charset="UTF-8">
+		<title>if</title>
+		
+		<style>
+			div.here {
+				color: #00f;
+				font-size: 1.5em;
+			}
+			
+			.red {
+				display: block;
+				width: 300px;
+				height: 60px;
+				line-height: 60px;
+				color: #f00;
+				border: 2p solid #aaa;
+				padding: 20px;
+				box-sizing: border-box;
+				box-shadow: 2px 2px 3px #bbb;
+				border-radius: 6px; 
+				text-align: center;
+			}
+		</style>
+</head>
+<body>
+	<h2>if example</h2>
+	<script>
+	/*
+		//임의의 변수에 정수가 하나가 저장되어있다.
+		//이 때 저장된 변수가 100보다 크면 '100이상'을 출력하시오. 
+
+		let a;
+		a = 99;
+		
+		if(a > 100) {
+			alert("100이상");
+		} 
+			
+		document.write("su=", su);
+	
+	
+		//키가 180 미만이고, 몸무게가 100kg 이하일 때
+		//'탑승가능'을 입력하시오
+			 
+		let cm = 162;
+		let kg = 55;
+
+		if( cm < 180 && kg < 100 ) {
+			document.write("탑승가능");
+		}
+		document.write("<div class='here'>고객님을 환영합니다~</div>")
+	
+		//몸무게가 60~90kg 사이면 '표준 몸무게입니다.' 출력
+		let kg = 65;
+		
+		if ( kg >= 60 && kg <= 90 ) {
+			document.write("표준 몸무게입니다.");
+		}
+	*/
+		
+		//몸무게가 60미만 이거나 90초과일때 '탑승불가'를 빨간색 글씨로 출력
+		//단, 문자가 출력 여부에 관계없이 문자가 표시될 영역을 style을 사용하여 표시
+		
+		let kg2 = 50;
+		
+		document.write("<output class='red'>");
+			if(kg2<60 || kg2>90) {
+				document.write(탑승불가);
+			}
+		document.write("</output>");
+			
+		<div class='r'>
+		if(kg2<60 || kg2>90) {
+			document.write(탑승불가);
+		}
+		</div>	
+	</script>
+	
+</body>
+</html>

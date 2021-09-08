@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>if4.html</title>
+	
+	<style>
+		output {
+				display: inline-block;
+				margin-left: 20px;
+				margin-top: 20px;
+				border: 2px solid #aaa;
+				width: 176px;
+				padding: 10px;
+				height: 200px;
+				box-sizing: border-box;
+				background-color: yellow;
+				color: #ff0;
+		}
+		
+		input[type=button] {
+			width: 120px;
+			margin-left: 32px;
+			margin-top: 10px;
+		}
+	</style>
+	
+</head>
+
+<body>
+	두수 a,b에 임의의 수를 대입한 후 a값이 크면 두수를 더한 결과를 출력하고, 
+	a값이 작으면 두 수를 뺀 결과를 출력하시오.
+	
+	단, 두 수 a,b는 폼을 통해 전달 받아 
+	버튼이 클릭되면 처리 결과를 output 태그를 통해 출력하시오.
+	
+	<h1>두 수를 비교한 후 처리</h1>
+	
+	<form name="form1" method="post" action="">
+	
+		<label>a의 값</label>
+		<input type="text" name="a" value="100">
+		
+		<br>
+		
+		<label>b의 값</label>
+		<input type="text" name="b" value="50">
+		
+		<br>
+		<input type="button" name="btn" value="확인">
+		
+		<br>
+		<output name="here"></output>
+		
+	</form>
+	
+	<script>
+			document.form1.btn.onclick = function(){
+				var a = Number(document.form1.a.value);
+				var b = Number(document.form1.b.value);
+				var r;
+				
+				if(a>b) {
+					r = a+b;
+				}
+				else {
+					r = a-b;
+				}
+				document.form1.here.innerHTML = r;
+			}
+	</script>
+	
+</body>
+</html>
