@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>if5.html</title>
+</head>
+<body>
+	<fieldset>
+		고객의 point 점수를 사용하여 점수별로 등급을 표시해보자
+		<br>
+		1000점 이상이면 '다이아몬드'
+		800점 이상이면 '골드'
+		600점 이상이면 '실버'
+		400점 이상이면 'vvip'
+		400점 미만이면 'vip'
+	</fieldset>
+	
+	<div id="here">here</div>
+	
+	<script>
+		let point = 1500;
+		let level;
+		
+		if(point>=1000){ level = "다이아몬드"; }
+		else if(point>=800){ level = "골드"; }
+		else if(point>=600){ level = "실버"; }
+		else if(point>=400){ level = "vvip"; }
+		else if(point<400){ level = "vip"; }
+		
+		/*
+		//내림차순으로하면 안됨
+		if(point<400){ level = "vip"; }
+		else if(point>=400 && point<600 ){ level = "vvip"; }
+		else if(point>=600 && point<800){ level = "실버"; }
+		else if(point>=800 && point<1000){ level = "골드"; }
+		else if(point>=1000){ level = "다이아몬드"; }
+		*/
+		
+		document.write("고객님의 포인트 점수는 ", point)
+		document.write("등급은 ", level, "입니다.")
+		
+		var d = document.getElementById("here");
+		d.innerHTML="유다현 화이팅!"
+		
+	</script>
+	
+</body>
+</html>
