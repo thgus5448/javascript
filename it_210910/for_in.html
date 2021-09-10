@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>for~in.html</title>
+</head>
+<body>
+<script>
+
+	let obj = ["강아지", "송아지", "망아지", "고양이"];
+	
+	//일반 for문 사용
+	for(var i=0; i<obj.length; i++) {
+		document.write(obj[i], " ");
+	}
+	 //for~in
+	for(var x in obj){
+		document.write(obj[x], " ");
+	}
+	 
+	 //배열의 값들 중 짝수만을 출력하시오(for~in)
+	 let numbers = [1,2,3,4,5,6,7,8,9,10];
+	 
+	 for(var n in numbers) {
+		 
+		 if(numbers[n]%2==0){
+			 document.write(numbers[n], " ");
+		 }
+		 
+	 }
+</script>	
+
+</body>
+</html>

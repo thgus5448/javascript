@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Insert title here</title>
+</head>
+<body>
+	<h2>구구단</h2>
+	<form name="f1" method="post" action="">
+		<label>단수</label>
+		<input type="text" name="dan" value="1">
+		<input type="button" name="btn" value="실행">
+		<br>
+		<textarea name="result" rows="10" cols="50"></textarea>
+	</form>
+	
+<script>
+	var f1 = document.f1;
+	var btn = f1.btn;
+	
+	//버튼누르면 실행
+	btn.onclick = function() {
+		var dan = Number(f1.dan.value);
+		var str = " "	
+		
+		for(var i=1 ; i<10 ; i++) {
+			f1.result.value = str;
+			str += dan + " x " + i + " = " + (dan * i) + "\n";
+		}
+			
+	}
+		
+</script>
+</body>
+</html>
