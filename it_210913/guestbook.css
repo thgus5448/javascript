@@ -1,0 +1,135 @@
+@charset "UTF-8";
+
+#guestbook {
+	width: 600px;
+	padding: 3px 30px 30px 40px;
+	border-radius: 30px;
+	margin: 40px auto;
+	color: #47597E;
+	border: 2px dashed #47597E;
+}
+
+#guestbook h1 {
+	text-align: center;
+	color: #47597E;
+}
+
+#guestbook h1 {
+	margin: 40px 0;
+}
+
+#guestbook input[type=submit] {
+	border: none;
+	border-radius: 10px;
+	background-color: #D8E3E7;
+	color: #47597E;
+	padding: 10px 30px;
+	margin-top: 30px;
+	margin-left: 250px;
+}
+
+#guestbook textarea {
+	width: 500px;
+}
+
+
+/******************* 방명록 조회 *******************/
+
+#guestbook_list {
+	width: 1200px;
+	height: 1000px;
+}
+
+#guestbook_list h1 {
+	text-align: left;
+	margin: 30px;
+}
+
+#guestbook_list form {
+	margin: 5px auto;
+	width: 500px;
+	border: 3px solid #47597E;
+	text-align: center;
+}
+
+#guestbook_list input[type=search] {
+	width: 250px;
+	height: 25px;
+	margin: 5px;
+	border: none;
+	background-color: #fff; 
+}
+
+#guestbook_list form>input[type=submit] {
+	height: 30px;
+	width: 50px;
+	margin: 5px;
+	border: 1px solid #eee;
+	border-radius: 5px;
+	color: #47597E;
+	padding: 5px 10px;
+}
+
+#guestbook_list .items {
+	padding: 40px 15px;
+	border: none;
+	width: 1200px;
+	height: 750px;
+}
+
+#guestbook_list .item {
+	display: inline-block;
+	width: 280px;
+	height: 330px;
+	float: left;
+	background-color:#EEEDED;
+	border: none;
+	border-radius: 15px;
+	margin: 10px 5px;
+	padding: 20px 10px;
+}
+
+#guestbook_list .item>lavel {
+	float: none;
+	text-align: right; <!-- 가운데정렬해야함 --!>
+}
+
+#guestbook_list .item>output {
+	margin: 10px 20px;
+	padding: 5px 10px;
+}
+
+#guestbook_list input[type=checkbox] {
+	margin: 10px;
+}
+
+#guestbook_list textarea {
+	width: 230px;
+	height: 200px;
+	margin: 15px;
+	border-radius: 10px;
+	border: none; 
+	background-color: #fff;
+}
+
+#guestbook_list .btns {
+	clear: left;
+	text-align: center;
+}
+
+#guestbook_list input[type=button] {
+	background-color: #fff;
+	color: #47597E;
+	border: none;
+	margin: 10px; 
+}
+
+#guestbook_list input[type=button]:hover {
+	text-decoration: underline;
+	font-weight: bolder;
+}
+
+#guestbook_list form {
+	text-align: right;
+	margin:10px;  
+}
