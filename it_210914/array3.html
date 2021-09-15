@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>arry3.html</title>
+</head>
+<body>
+
+	<fieldset>
+		<legend>배열과 관련된 주요 함수</legend>
+		<ul>
+			<li>concat : 배열 병합</li>
+			<li>join : 구분자 변경 </li>
+			<li>reverse : 순서 바꿈</li>
+			<li>sort : 정렬</li>
+		</ul>
+		
+	</fieldset>
+	
+	<script>
+		let mnt = ["백두산", "금강산", "치악산", "내장산", "설악산", "지리산", "한라산"];
+		let river = ["한강", "낙동강", "두만강", "섬진강", "요강"];
+		
+		//mnt + river
+		let all = mnt.concat(river);
+		document.write("<li> ALL : " + all);
+		
+		//join 문자열 변경
+		document.write("<li> JOIN : " + all.join("☆☆☆"));
+		
+		//reverse
+		document.write("<li> REVERSE : " + mnt.reverse());
+		
+		//sort
+		mnt.sort(); //js의sort는 기본값이 오름차순
+		document.write("<li>mnt(ASC): " + mnt); //오름차순
+		document.write("<li>mnt(DESC)" + mnt.reverse()); //내림차순
+		
+		let number = [90,894,2248,521569,554,546,57,68765,1,25]
+		number.surt();
+		document.write("<li>number : " + number);	//문자열 오름차순으로 정렬됨
+		
+		
+		number.sort(my);
+		
+		function my(x,y) {
+			return x-y;	//숫자 오름차순 정렬
+			return y-x; //숫자 내림차순 정렬
+		}
+		document.write("<list>number2 : " + my)	//숫자 오름차순으로 정렬
+	
+		
+		</script>
+</body>
+</html>

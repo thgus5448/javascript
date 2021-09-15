@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>array2.html</title>
+</head>
+<body>
+	<script>
+		let score = new Array(4);
+		score[0] = new Array("김씨", 50, 60, 0, "");
+		score[1] = new Array("이씨", 70, 70, 0, "");
+		score[2] = ["홍씨", 100, 20, 0, ""];
+		score[3] = ["박씨", 20, 60, 0, ""];
+		
+		for(var i=0; i<score.length; i++) {
+			score[i][3] = (score[i][1] + score[i][2]) / 2.0;
+			
+			if(score[i][3]>=90) { score[i][4]="A"; }
+			else if(score[i][3]>=80) { score[i][4]="B"; }
+			else if(score[i][3]>=70) { score[i][4]="C"; }
+			else if(score[i][3]>=60) { score[i][4]="D"; }
+			else if(score[i][3]<60) { score[i][4]="F"; }
+			
+		document.write("<li>" +score[i][0]+ " 평균 : " + score[i][3] +"<br>");
+		document.write("<li>" +score[i][0]+ "학점 : " + score[i][4]);
+		}
+		
+		
+		// 통점이 60미만이거나, 성적 중 하나라도 40미만이거나면 총점 60이상이어도 불합격처리
+		if(score[r][3]<60 || score[r][1]<40 || score[r][2]<40) {
+			document.write("불합격자 : " + score[r] + "<br>");
+		}
+	</script>
+</body>
+</html>

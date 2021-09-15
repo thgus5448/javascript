@@ -1,0 +1,23 @@
+<!DOCTYPE h,tml>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<script>
+		let su = [3,5,1,2,9,8,7,6,4];
+		
+		for(var i=0 ; i<su.length-1 ; i++) { //비교기준i
+			for (var j=(i+1) ; j<su.length ; j++) { //비교대상j
+				if(su[i]>su[j]) {	//swapping 로직(교환로직)
+					var temp = su[i];
+					su[i] = su[j];
+					su[j] = temp;
+				}
+			} 
+		}
+		document.write("<li> ASD : " + su);
+	</script>
+</body>
+</html>

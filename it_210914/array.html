@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>arry.html</title>
+</head>
+<body>
+	<script>
+		document.write("<h1>Array Example</h1>");
+		
+		// 1) 크기를 지정하지 않고 배열을 선언하는 방법
+			let score=new Array();
+			score[0] = 90;
+			score[1] = 81;
+			
+			document.write("<li>", score);
+			
+			score[2] = score[0] + score[1]; //합계
+			score[3] = score[2] / 2.0;	//평균
+			
+			document.write("<li>국어 : ", score[0]);
+			document.write("<li>영어 : ", score[1]);
+			document.write("<li>총점 : ", score[2]);
+			document.write("<li>평균 : ", score[3]);
+			
+			// score[4]에 학점을 구하여 지정한 후 출력하시오.
+			if(score[3]>=90) { score[4]="A";}
+			else if(score[3]>=80) { score[4]="B";}
+			else if(score[3]>=70) { score[4]="c";}
+			else if(score[3]>=60) { score[4]="d";}
+			else if(score[3]<60) { score[4]="f";}
+			
+			document.write("<li>학점 : ", "score[4]")
+			
+			
+		// 2) 크기를 지정하여 배열 선언하는 방법
+			let names = new Array(3);
+			names[0]="홍길동";
+			names[1]="김철수";
+			names[2]="이영희";
+			
+			document.write("<li>", names);
+			
+			//새로운 배열도 만들어지지롱
+			names[3]="달달박박";
+			document.write("<li>", names);
+			
+			
+		// 3) 초기값을 사용하여 배열을 선언하는 방법
+		let grade = new Array(1,2,3,2,1);
+		
+		for(var i=0; i<grade.length ; i++);
+			document.write("<li>", grade[i], "학년");
+		
+			
+		// 4) JSON타입으로 배열을 선언
+		let age = [10,20,30,25,15,3];
+		document.write("<li>연령대 : ", age, "대");
+	</script>
+</body>
+</html>

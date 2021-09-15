@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>numeric.html</title>
+	
+	<link rel="stylesheet" type="text/css" href="numeric.css">
+</head>
+<body>
+
+	<h2>EVAL</h2>
+	<div id="eval">
+		<input type="text" name="su" id="su">
+		<input type="button" value="계산" id="btnEval">
+		<br>
+		<div id="evalResult"></div>
+	</div>
+	
+	<h2>parseInt</h2>
+	<div id="parseInt">
+		<fieldset>
+			<label>수</label>
+			<input type="text" id="su2" size="3">
+			<label>진수</label>
+			<input type="text" id="radix" size="3">
+			<input type="button" id="btnRadix" value="확인">
+			<br>
+			<div id="radixResult"></div> 
+		</fieldset>
+	</div>
+	
+	<h2>isFinite || isNaN</h2>
+	<div id="isNaN">
+		<label>문자열</label>
+		<input type="text" id="str">
+		<br>
+		<input type="button" value="isFinite" id="btnFinite">
+		<input type="button" value="isNAN" id="btnNaN">
+		<br>
+		<textarea id="txtResult" rows="" cols=""></textarea>
+	</div>
+	
+	<script src="numeric.js"></script>
+</body>
+</html>
