@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>form_text</title>
+</head>
+<body>
+	<form name="frm" method="POST">
+		<input type="text" name="ori" value="park">
+		<br>
+		<input type="text" name="copy">
+		<br>
+		<input type="button" name="btn" value=" 복 사"  onclick="copyFun(this)">
+	</form>
+	
+	<script>
+		let frm = document.frm;
+		
+		/*
+		frm.btn.onclick = function() {
+			frm.copy.value = frm.ori.value;
+		}
+		*/
+		
+		function copyFun(good){
+			alert(good.value)
+		}
+	</script>
+	
+</body>
+</html>
