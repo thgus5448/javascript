@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>form_check.html</title>
+	
+	<link src="form_check.js"
+	<style>
+		form label{
+			display: inline-block;
+			width: 100px;
+		}
+		form .zone>input {
+			width: 100px;
+			padding: 6px;
+			box-sizing: border-box;
+		}
+	</style>
+</head>
+<body>
+	<h1>checkbox를 사용한 다중선택</h1>
+	<form name="ff" method="post" action="">
+		<textarea name="re" rows="10" cols="50"></textarea>
+		<br>
+		<label><input type="checkbox" name="chk" value="방탄조끼">방탄조끼</label>
+		<label><input type="checkbox" name="chr" value="유재석">유재석</label>
+		<label><input type="checkbox" name="chr" value="티아라">티아라</label>
+		<br>
+		<label><input type="checkbox" name="chr" value="소년시대">소년시대</label>
+		<label><input type="checkbox" name="chr" value="황신혜">황신혜</label>
+		<label><input type="checkbox" name="chr" value="신지">신지</label>
+		<br>
+		<div class="zone">
+		<input type="button" value="확인" name="btn">
+		<input type="reset" value="초기화"> 
+		</div>
+	</form>
+</body>
+</html>

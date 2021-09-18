@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>form_radio.html</title>
+</head>
+<body>
+	<h2>Box의 색상을 고르시오</h2>
+	<form name="frm" method="post">
+		<textarea name="re" rows="7" cols="60"></textarea>
+		<br>
+		<label><input type="radio" name="chk" value="#000">검정</label>
+		<label><input type="radio" name="chk" value="#00f">파랑</label>	
+		<label><input type="radio" name="chk" value="#0f0">녹색</label>
+		<label><input type="radio"  name="chk" value="#f00">빨강</label>
+		<br>
+		<label><input type="radio"  name="chk" value="#ff0">노랑</label>
+		<label><input type="radio"  name="chk" value="#fff">흰색</label>
+		<label><input type="radio"  name="chk" value="#f90">오렌지</label>
+		
+		<input type="button" value="click" onclick="mClick(this.form)">
+	</form>
+	
+	<script>
+		function mClick(f){
+			for(var i=0 ; i<f.chk.length ; i++){
+				
+				if(f.chk[i].checked){
+					
+					//alert(f.chk[i].value);
+					f.re.style.backgroundColor = f.chk[i].value;
+					f.re.style.color = "#ff0";
+				}
+			}
+		}
+	</script>
+	
+</body>
+</html>

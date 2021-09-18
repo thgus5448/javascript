@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>form_raodio2.html</title>
+	
+	<script src="form_radio2.js"></script>
+</head>
+<body>
+	<!--  
+		배열에 입력되어 있는 정보를 활용하여 라디오버튼의 초기선택값을 설정.
+	 -->
+	 
+	 <form name="frm_radio" method="post" action="">
+	 	<label>성명</label>
+	 	<input type="text" name="irum" readOnly>
+	 	<br>
+	 	<label>성별</label>
+	 	<label><input type="radio" name="gender" value="남자">남자</label>
+	 	<label><input type="radio" name="gender" value="여자">여자</label>
+	 	<br>
+	 	<label>고향</label>
+	 	<label><input type="radio" name="city" value="서울">서울</label>
+	 	<label><input type="radio" name="city" value="제주">제주</label>
+	 	<label><input type="radio" name="city" value="강원도">강원도</label>
+	 	<label><input type="radio" name="city" value="호남">호남</label>
+	 	<label><input type="radio" name="city" value="경상도">경상도</label>
+	 	<br>
+	 	<label>점심메뉴</label>
+	 	<label><input type="radio" name="lunch" value="한식">한식</label>
+	 	<label><input type="radio" name="lunch" value="중식">중식</label>
+	 	<label><input type="radio" name="lunch" value="양식">양식</label>
+	 	<label><input type="radio" name="lunch" value="분식">분식</label>
+	 	<br>
+	 	<input type="button" value="확인" name="btn">
+	 	<br>
+	 	<div id="output"></div>
+	 </form> 
+</body>
+</html>
