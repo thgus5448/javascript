@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>form_exam3.html</title>
+	
+	<script src="form_exam3.js"></script>
+</head>
+<body>
+	<div id="container">
+	
+		<h2>성적조회</h2>
+		
+		<form name="form_exam3" method="post" action="">
+			
+			<label>성명</label>
+			<input type="text" name="irum">
+			<br>
+			
+			<span>과목</span>
+			<select name="subject">
+				<option>국어</option>
+				<option>영어</option>
+				<option>수학</option>
+				<option>전산</option>
+				<option>세계사</option>
+			</select>
+			<br>
+			
+			<label>성적</label>
+			<input type="text" name="score">
+			<br>
+			
+			<span>시험종류</span>
+			<select name="exam">
+				<option>월말고사</option>
+				<option>기말고사</option>
+				<option>특별전형</option>
+			</select>
+			<hr>
+			
+			<input type="button" name="chg" value="수정">
+			<input type="button" name="pnt" value="출력">
+			<br>
+			
+			<textarea name="result" rows="10" cols="80"></textarea>
+		
+		</form>
+	</div>
+	
+</body>
+</html>

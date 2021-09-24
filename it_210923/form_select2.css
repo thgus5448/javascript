@@ -1,0 +1,41 @@
+@charset "UTF-8";
+
+#select2 {
+	width: 800px;
+	margin: 20px auto;
+}
+#select2 h2 {
+	text-align: center;
+}
+#select2 .top div {
+	display: inline-block;
+	width: 180px;
+	border: 1px solid #ccc;
+	border-radius: 10px;
+	min-height: 240px;
+	vertical-align: top;
+	text-align: center;
+}
+#select2 .top span {
+	display: inline-block;
+	width: 100%;
+	text-align: center;
+	background-color: #8080c0;
+	color: #ff8;
+	padding: 5px;
+	border-radius: 10px 10px 0 0;
+}
+#select2 .top span {
+	width: 100px;
+	height: 200px;
+	font-size: 14pt;
+	padding: 4px;
+}
+#select2 #result {
+	min-width: 200px;
+	background-color: #333;
+	border-radius: 10px;
+	color: #fff;
+	padding: 20px;
+	font-size: 20pt;  
+}
