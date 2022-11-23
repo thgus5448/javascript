@@ -1,4 +1,4 @@
-<%-- 게시물 목록 출력 --%>
+<%-- 게시판 목록 보기 --%>
 <%@ page import="java.util.List"%>
 <%@ page import="java.util.Map"%>
 <%@ page import="java.util.HashMap"%>

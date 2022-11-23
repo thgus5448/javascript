@@ -9,6 +9,9 @@ import java.util.Vector;
 
 import javax.servlet.ServletContext;
 
+import org.apache.taglibs.standard.tag.common.core.SetSupport;
+import org.apache.wss4j.policy.stax.assertionStates.SecureConversationTokenAssertionState;
+
 import common.JDBConnect;
 
 public class BoardDAO extends JDBConnect{
@@ -53,9 +56,7 @@ public class BoardDAO extends JDBConnect{
 		 * 차이점 : vector는 동기화된 메소드로 구성 = 멀티스레드가 동시에 이 메소드들을 실행할 수 없다.
 		 */
 		
-		/* 게시물 목록을 가져오는 쿼리문 
-		 * SELECT * FROM board WHERE (searchField) LIKE %(searchWord)% ORDER BY num DESC";
-		 */
+		// 게시물 목록을 가져오는 쿼리문 
 		String query =	"SELECT * FROM board";
 		if (map.get("searchWord") != null) {
 			query += " WHERE " + map.get("searchField") + " " + "LIKE '%" + map.get("searchWord") + "%'";
@@ -159,5 +160,52 @@ public class BoardDAO extends JDBConnect{
 			System.out.println("게시물 조회수 증가 중 예외 발생");
 			e.printStackTrace();
 		}
+	 }
+
+	 // 지정한 게시물 수정
+	 public int updateEdit(BoardDTO dto) {
+		 int result = 0;
+		 
+		 try {
+			// 쿼리문 템플릿
+			String query = "UPDATE board SET "
+						 + " title=?, content=? "
+						 + " WHERE num=?";
+			
+			// 쿼리문 완성
+			psmt = con.prepareStatement(query);
+			psmt.setString(1, dto.getTitle());
+			psmt.setString(2, dto.getContent());
+			psmt.setString(3, dto.getNum());
+			
+			// 쿼리문 실행
+			result = psmt.executeUpdate();
+		} catch (Exception e) {
+			System.out.println("게시물 수정 중 예외 발생");
+			e.printStackTrace();
+		}
+		 
+		 return result;	// 결과 반환 : 업데이트된 행의 개수
+	 }
+
+	 // 지정한 게시물 삭제
+	 public int deletePost(BoardDTO dto) {
+		 int result = 0;
+		 
+		 try {
+			// 쿼리문 템플릿
+			 String query = "DELETE FROM board WHERE num=?";
+			 
+			 // 쿼리문 완성
+			 psmt = con.prepareStatement(query);
+			 psmt.setString(1, dto.getNum());
+			 
+			 // 쿼리문 실행
+			 result = psmt.executeUpdate();
+		} catch (Exception e) {
+			System.out.println("게시물 삭제 중 예외 발생");
+			e.printStackTrace();
+		}
+		 return result;	// 결과 반환
 	 }
 }

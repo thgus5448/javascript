@@ -1,4 +1,4 @@
-<%-- 글쓰기 페이지 --%>
+<%-- 글쓰기 --%>
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ include file="IsLoggedIn.jsp" %>	<!-- 로그인 확인 -->
 <!DOCTYPE html>
@@ -43,7 +43,7 @@
 					<textarea name="content" style="width: 90%; height: 100px;"></textarea>
 				</td>
 			</tr>
-			<tr>
+			<tr> <!-- 버튼 -->
 				<td colspan="2" align="center">
 					<button type="submit">작성 완료</button>
 					<button type="reset">다시 입력</button>

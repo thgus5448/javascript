@@ -1,3 +1,4 @@
+<%-- 게시판 상세보기 --%>
 <%@ page import="model1.board.BoardDAO"%>
 <%@ page import="model1.board.BoardDTO"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
@@ -18,11 +19,18 @@ BoardDTO dto = dao.selectView(num);			// 게시물 가져오기
 <body>
 <script type="text/javascript">
 function deletePost(){
-	
+	var confirmed = confirn("정말로 삭제하시겠습니까?");
+	if(confirmed) {
+		var form = document.writeFrm;		// 이름(name)이 "writeFrm"인 폼 선택
+		form.method = "post";				// 전송 방식
+		form.action = "DeleteProcess.jsp";	// 전송 경로
+		form.submit();						// 폼값 전송
+	}
 }
 </script>
 
-<jsp:include page="../Common/Link.jsp"/> <!-- 공통 링크 -->
+<!-- 공통 링크 -->
+<jsp:include page="../Common/Link.jsp"/>
 
 <h2>게시판 - 상세 보기(View)</h2>
 <form name="writeFrm">
@@ -55,7 +63,7 @@ function deletePost(){
 					if( session.getAttribute("UserId") != null 
 						&& session.getAttribute("UserId").toString().equals(dto.getId()) ) { // 로그인 상태
 				%>
-				<button type="button" onclick="location.href='Edit.jsp?Num=<%= dto.getNum() %>';">수정하기</button>
+				<button type="button" onclick="location.href='Edit.jsp?num=<%= dto.getNum() %>';">수정하기</button>
 				<button type="button" onclick="deletePost();">삭제하기</button>
 				<%
 				}
